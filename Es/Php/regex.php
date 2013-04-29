@@ -34,3 +34,24 @@ if ( $result > 0 ) {
   print_r($out[0]);
 }
 
+/*
+Data replacing
+Input:
+The following text:
+During the day, Damien is working.
+Output:
+From the given input, output the following text to the browser:
+Damien is happy to work.
+Guidelines
+Use regular expressions functions only
+No more than 2 lines of code expected. Bigger code will be rejected
+
+ */
+
+$data = "During the day, Damien is working.";
+echo "<br/>";
+
+echo $data;
+echo "<br/>";
+
+echo preg_replace(array('/working/', '/During the day, /'), array('happy to work', ''), $data );
