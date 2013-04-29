@@ -14,7 +14,7 @@ $feedURL = 'http://gdata.youtube.com/feeds/api/playlists/4308E545B34F885D?v=2';
 
 
 $sxml = simplexml_load_file($feedURL);
-$title = $sxml->title;
+
 
 
 foreach ($sxml->entry as $entry) {
